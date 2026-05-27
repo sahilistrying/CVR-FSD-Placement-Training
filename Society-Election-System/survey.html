@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Society Survey</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>SocietyConnect</h1>
+        <nav>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="survey.html">Surveys</a>
+            <a href="polls.html">Polls</a>
+            <a href="index.html">Logout</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="form-container">
+            <h2>Monthly Society Feedback</h2>
+            <form action="dashboard.html" method="GET">
+                
+                <div class="form-group">
+                    <label>Cleanliness Satisfaction</label>
+                    <div class="radio-group">
+                        <div>
+                            <input type="radio" id="clean-high" name="cleanliness" value="excellent" required>
+                            <label for="clean-high">Excellent</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="clean-mid" name="cleanliness" value="average">
+                            <label for="clean-mid">Average</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="clean-low" name="cleanliness" value="poor">
+                            <label for="clean-low">Needs Improvement</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="security">Security Service Feedback</label>
+                    <select id="security" name="security" required>
+                        <option value="">Select an option...</option>
+                        <option value="satisfied">Highly Satisfied</option>
+                        <option value="neutral">Neutral</option>
+                        <option value="dissatisfied">Dissatisfied</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Select current issues (if any)</label>
+                    <div class="checkbox-group">
+                        <div>
+                            <input type="checkbox" id="issue-parking" name="issues" value="parking">
+                            <label for="issue-parking">Parking Space Allocation</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="issue-water" name="issues" value="water">
+                            <label for="issue-water">Water Supply Inconsistency</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="issue-maintenance" name="issues" value="maintenance">
+                            <label for="issue-maintenance">Maintenance Quality</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="suggestions">Additional Suggestions</label>
+                    <textarea id="suggestions" name="suggestions" rows="4" placeholder="Enter your feedback here..."></textarea>
+                </div>
+
+                <button type="submit" class="btn">Submit Survey</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - SocietyConnect</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>SocietyConnect</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="dashboard.html">Dashboard</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="grid-container">
+            <div class="form-container" style="margin: 0; width: 100%;">
+                <h2>Contact Committee</h2>
+                <form action="dashboard.html" method="GET">
+                    <div class="form-group">
+                        <label for="contact-name">Name</label>
+                        <input type="text" id="contact-name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="contact-email">Email</label>
+                        <input type="email" id="contact-email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contact-subject">Subject</label>
+                        <input type="text" id="contact-subject" name="subject" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contact-message">Message</label>
+                        <textarea id="contact-message" name="message" rows="5" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn">Submit Message</button>
+                </form>
+            </div>
+
+            <div class="card" style="align-self: start;">
+                <h3>Society Office Details</h3>
+                <p style="margin-top: 1rem;"><strong>Address:</strong><br>
+                Society Office, Ground Floor, Block A<br>
+                Green Valley Apartments</p>
+                
+                <p style="margin-top: 1rem;"><strong>Email:</strong><br>
+                admin@greenvalley.com</p>
+                
+                <p style="margin-top: 1rem;"><strong>Phone:</strong><br>
+                +91 98765 43210</p>
+                
+                <p style="margin-top: 1rem;"><strong>Office Timings:</strong><br>
+                Monday - Saturday: 9:00 AM - 6:00 PM<br>
+                Sunday: Closed</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

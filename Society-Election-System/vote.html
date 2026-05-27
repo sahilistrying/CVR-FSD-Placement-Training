@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vote - SocietyConnect</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>SocietyConnect</h1>
+        <nav>
+            <a href="polls.html">Back to Polls</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="index.html">Logout</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="form-container" style="max-width: 800px;">
+            <h2>Cast Your Vote: President Election</h2>
+            <form action="dashboard.html" method="GET">
+                <div class="grid-container" style="margin-top: 1rem;">
+                    
+                    <div class="card" style="border: 2px solid transparent;">
+                        <h3>Ravi Kumar</h3>
+                        <p><strong>Flat:</strong> A-402</p>
+                        <p><strong>Position:</strong> President</p>
+                        <p style="font-style: italic; margin-bottom: 1rem;">"Dedicated to absolute transparency and structural upgrades."</p>
+                        <div class="radio-group">
+                            <div>
+                                <input type="radio" id="cand1" name="president_vote" value="ravi" required>
+                                <label for="cand1">Select Ravi Kumar</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card" style="border: 2px solid transparent;">
+                        <h3>Anita Desai</h3>
+                        <p><strong>Flat:</strong> C-105</p>
+                        <p><strong>Position:</strong> President</p>
+                        <p style="font-style: italic; margin-bottom: 1rem;">"Focusing on green initiatives and enhanced society security."</p>
+                        <div class="radio-group">
+                            <div>
+                                <input type="radio" id="cand2" name="president_vote" value="anita">
+                                <label for="cand2">Select Anita Desai</label>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <button type="submit" class="btn" style="margin-top: 2rem;">Submit Vote</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
